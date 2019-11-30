@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/data.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="mycalc">
+        <form name="calculator" id="calculator" class="cuerpo">
+            <h2 class="casio">CASIO</h2>
+            <input type="text" name="screen" id="screen" class="screen" readonly>
+            <div>
+                <input type="button" id="one" value="1" onclick="takeValue(1)">
+                <input type="button" id="two" value="2" onclick="takeValue(2)">
+                <input type="button" id="three" value="3" onclick="takeValue(3)">
+                <input type="button" id="add" value="+" onclick="takeValue('+')">
+            </div>
+            <div>
+                <input type="button" id="four" value="4" onclick="takeValue(4)">
+                <input type="button" id="five" value="5" onclick="takeValue(5)">
+                <input type="button" id="six" value="6" onclick="takeValue(6)">
+                <input type="button" id="sus" value="-" onclick="takeValue('-')">
+            </div>
+            <div>
+                <input type="button" id="seven" value="7" onclick="takeValue(7)">
+                <input type="button" id="eight" value="8" onclick="takeValue(8)">
+                <input type="button" id="nine" value="9" onclick="takeValue(9)">
+                <input type="button" id="mul" value="*" onclick="takeValue('*')">
+            </div>
+            <div>
+                <input type="button" id="zero" value="0" onclick="takeValue(0)">
+                <button type="button" id="clear" value="" onclick="clearInput()">AC</button>
+                <input type="button" id="equal" value="="onclick="result()">
+                <input type="button" id="div" value="/" onclick="takeValue('/')">       
+
+            </div>        
+        </form>	
+        </div>
+</body>
+</html>
